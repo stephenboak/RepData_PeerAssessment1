@@ -119,8 +119,7 @@ This is a histogram of the new dataset with missing values replaced using the me
 stepsAgg2 <- aggregate(stepsData2$steps, list(Date = stepsData2$date), sum)
 names(stepsAgg2)[names(stepsAgg2)=="x"] <- "Total.steps"
 
-hist(stepsAgg2$Total.steps, breaks = 13, main = "Histogram of Total Steps per Day - Imputed Values",
-     xlab = "Total Steps per Day", ylim = c(0, 25))
+hist(stepsAgg2$Total.steps, breaks = 13, main = "Histogram of Total Steps per Day - Imputed Values", xlab = "Total Steps per Day", ylim = c(0, 25))
 ```
 
 ![](PA1_template_files/figure-html/histNewData-1.png)<!-- -->
